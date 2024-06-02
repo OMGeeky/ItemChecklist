@@ -442,7 +442,7 @@ namespace ItemChecklist
 
 		private void SetupSortsAndCategories() {
 			foreach (int type in itemTexturePreload)
-				Main.instance.LoadItem(type);
+				Main.instance.LoadItem(type); // needs ImmediateLoad.
 
 			Texture2D terrariaSort = ResizeImage(TextureAssets.InventorySort[0], 24, 24);
 			Texture2D rarity = ResizeImage(TextureAssets.Item[ItemID.MetalDetector], 24, 24);

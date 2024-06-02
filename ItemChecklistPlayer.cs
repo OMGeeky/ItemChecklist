@@ -15,6 +15,7 @@ namespace ItemChecklist
 
 		// This is a list of items...Holds clean versions of unloaded mystery and loaded real items. 
 		internal List<Item> foundItems;
+		// TODO: Need to switch to saving ItemDefinition while preserving existing. Can you get ItemDefinition from UnloadedItem?
 		//
 		internal bool[] foundItem;
 		internal bool[] findableItems;
@@ -54,7 +55,6 @@ namespace ItemChecklist
 
 		public override void OnEnterWorld()
 		{
-			var itemChecklistPlayer = Main.LocalPlayer.GetModPlayer<ItemChecklistPlayer>();
 			ItemChecklistUI.Visible = false;
 			ItemChecklistUI.announce = announcePreference;
 			ItemChecklistUI.collectChestItems = findChestItemsPreference;

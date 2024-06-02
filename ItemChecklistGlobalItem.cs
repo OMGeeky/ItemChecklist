@@ -7,7 +7,6 @@ namespace ItemChecklist
 {
 	class ItemChecklistGlobalItem : GlobalItem
 	{
-		
 		const string LOCALIZATION_KEY = "Mods.ItemChecklist.GlobalItem.";
 		private static LocalizedText ItemChecklistAnnounceText;
 
