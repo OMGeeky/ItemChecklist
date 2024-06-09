@@ -122,5 +122,11 @@ namespace ItemChecklist
 				}
 			}
 		}
+
+		[MethodImpl(MethodImplOptions.NoInlining)]
+		internal static bool IsSimulatingCrafts()
+		{
+			return CraftingGUI.SimulatingCrafts;
+		}
 	}
 }

@@ -33,6 +33,9 @@ namespace ItemChecklist
 		// TODO, unloaded items, check against??
 		internal void ItemReceived(Item item)
 		{
+			if ( MagicStorageIntegration.Enabled && MagicStorageIntegration.IsSimulatingCrafts())
+				return;
+			
 			var itemChecklistPlayer = Main.LocalPlayer.GetModPlayer<ItemChecklistPlayer>();
 			if (!itemChecklistPlayer.foundItem[item.type] && itemChecklistPlayer.findableItems[item.type])
 			{

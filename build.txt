@@ -8,4 +8,4 @@ includeSource = true
 includePDB = true
 notworkingside = Client
 buildIgnore = .vs\*, Properties\*, *.csproj, *.user, obj\*, bin\*, *.config, lib\*, .gitignore, .git\*
-weakReferences = MagicStorage@0.6.0.3
+weakReferences = MagicStorage@0.7.0.0
